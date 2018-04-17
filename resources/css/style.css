@@ -49,6 +49,16 @@ h4 {
   font-size: 100%;
   line-height: 1.5;
 }
+
+.dark-background {
+  background-color: #a9a9a9;
+}
+
+.light-background {
+  background-color: #e6e6e6;
+}
+
+
 /* .image-container {
   overflow: hidden;
 }
@@ -132,7 +142,7 @@ nav a {
   /* align-items: flex-start; */
   height: 450px;
   padding: 2rem 1.5rem;
-  background-color: #a9a9a9;
+  /* background-color: #a9a9a9; 2 */
 }
 
 .banner-img {
@@ -177,13 +187,13 @@ nav a {
 
 /* Section 2: Orientation, etc */
 /* information-main */
-.courses {
-  background-color: #e6e6e6;
+.information {
+  /* background-color: #e6e6e6; 2 */
   height: 525px;
   padding: 2rem 1.5rem;
 }
 
-.course-image {
+.campus-image {
   width: 60%;
   height: inherit;
   /* padding: 2rem 1.5rem;  1 */
@@ -191,19 +201,19 @@ nav a {
 }
 
 /*width is 98% of the 60% container .course-image to match the image in banner section. Had to do this to accomodate the need for padding and right border */
-.course-img {
+.campus-img {
   width: 98%;
   height: 300px;
 }
 
-.course-image h2 {
+.campus-image h2 {
   /* font-weight: 800; */
   /* font-size: 150%; */
   /* line-height: 1.0; */
   padding-top: 2rem;
 }
 
-.course-image h4 {
+.campus-image h4 {
 
   /* font-size: 75%; */
   /* line-height: 1.5; */
@@ -212,7 +222,7 @@ nav a {
 
 /* information details */
 
-.course-info {
+.campus-info {
   width: 40%;
   height: inherit;
   /* padding: 2rem 0;  1 */
@@ -247,4 +257,43 @@ nav a {
 .info-text .link {
   color: blue;
   padding-top: 1rem;
+}
+
+/* Section 3 : Courses */
+
+.learning {
+/* width: 100%; */
+padding: 2rem 2rem;
+}
+
+.learning h1 {
+  text-align: center;
+}
+.courses {
+  padding: 1rem;
+  flex-wrap: wrap;
+}
+
+.course-info {
+  margin: 1rem;
+  width: 30%;
+  height: 325px;
+  background-color: white;
+}
+
+.course-img {
+  width: 100%;
+  height: auto;
+}
+
+.course-info h3 {
+  padding-top: 1rem;
+  padding-left: 1rem;
+}
+
+.course-info h4 {
+  padding-top: .75rem;
+  padding-left: 1rem;
+  font-size: 80%;
+  line-height: 1.5;
 }
