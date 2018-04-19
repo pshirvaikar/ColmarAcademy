@@ -46,7 +46,7 @@ h3 {
 }
 
 h4 {
-  font-size: 100%;
+  font-size: 80%;
   line-height: 1.5;
 }
 
@@ -110,11 +110,11 @@ header nav ul {
   display: flex;
 }
 
-nav li {
+header nav li {
   padding-left: 1rem;
 }
 
-nav a {
+header nav a {
   vertical-align: bottom;
   line-height: 1.6;
   font-size: 1rem;
@@ -189,13 +189,13 @@ nav a {
 /* information-main */
 .information {
   /* background-color: #e6e6e6; 2 */
-  height: 525px;
+  /* height: 525px; 4.19 */
   padding: 2rem 1.5rem;
 }
 
 .campus-image {
   width: 60%;
-  height: inherit;
+  /* height: inherit; 4.19 */
   /* padding: 2rem 1.5rem;  1 */
   /* border-right: solid 1px #c6c1c1;  1 */
 }
@@ -224,7 +224,7 @@ nav a {
 
 .campus-info {
   width: 40%;
-  height: inherit;
+  /* height: inherit; 4.19 */
   /* padding: 2rem 0;  1 */
 }
 .flex {
@@ -294,6 +294,73 @@ padding: 2rem 2rem;
 .course-info h4 {
   padding-top: .75rem;
   padding-left: 1rem;
-  font-size: 80%;
-  line-height: 1.5;
+  /* font-size: 80%; */
+  /* line-height: 1.5; */
+}
+
+/* Section 4 : Thesis */
+.thesis h1 {
+    text-align: center;
+    padding-top: 2rem;
+}
+
+.exhibits {
+  padding: 2rem 1.5rem;
+  border-bottom: solid 1px #c6c1c1;
+}
+.urbanvideo{
+  width:60%;
+  margin-right: 1.5rem;
+}
+/*  can be deleted? */
+.thesis-video {
+  margin-bottom: 1.5rem;
+}
+
+/*
+.urbanvideo h3 {
+  padding-top: 1.5rem;
+}
+*/
+.exhibits h4 {
+  padding-top: .5rem;
+}
+
+.thesis-types {
+  display: block;
+}
+
+.thesis-detail {
+  padding: 1rem 1rem;
+}
+
+.thesis-img {
+  width: 35%;
+  height: 180px;  /* auto elongated it */
+  padding-right: 1rem;
+}
+
+.thesis-text {
+   flex-direction: column;
+   justify-content: center;
+   padding-right: 2rem;
+}
+
+/* Footer  */
+footer {
+  padding: 1rem 1.5rem;
+}
+
+footer .content {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer p{
+  font-size: .7rem;
+}
+
+footer nav a {
+  padding-left: 1rem;
+  font-size: .7rem;
 }
