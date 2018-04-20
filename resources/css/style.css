@@ -296,9 +296,6 @@ header .mobile {
 /* Mobile Section3 Information */
 @media only screen and (max-width: 480px) {
   .information {
-    /* display: flex; */
-    /* justify-content: flex-start; */
-    /* align-items: flex-start; */
     padding: 0;
   }
   .information .desktop {
@@ -364,6 +361,39 @@ padding: 2rem 2rem;
   padding-left: 1rem;
   /* font-size: 80%; */
   /* line-height: 1.5; */
+}
+
+/*
+.mobile{
+  display: none;
+}
+*/
+
+/* Mobile Section 3 : Courses */
+@media only screen and (max-width: 480px) {
+  .desktop {
+     display: none;
+   }
+
+  .learning {
+    padding: 2rem 1rem;
+    background-color: #e6e6e6;
+  }
+
+  .learning h1 {
+    margin-bottom: 1rem;
+  }
+
+  .learning .mobile .course-mob{
+    display:block;
+    padding: 1rem 1rem 1.5rem 1rem;
+    font-weight: 600;
+    font-size: 100%;
+    width: auto;
+    margin-top: .5rem;
+  }
+
+
 }
 
 /* Section 4 : Thesis */
