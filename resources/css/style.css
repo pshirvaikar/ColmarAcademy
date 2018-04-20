@@ -64,14 +64,19 @@ h4 {
 }
 */
 
-/* .image-container img {
-  display: block;
-  max-width: 100%;
-} */
+/* Mobile Universal Styles */
 
-@media only screen and (max-width: 760px) {
-  .main-content {
-    top: 2.5625rem;
+@media only screen and (max-width: 480px) {
+  h1 {
+    font-weight: 600;
+    font-size: 200%;
+    line-height: 1.0;
+  }
+
+  h2 {
+    font-weight: 700;
+    font-size: 175%;
+    line-height: 1.0;
   }
 }
 
@@ -103,7 +108,7 @@ header .logo {
 
 header .bold {
   font-weight: bold;
-  /* color: #4a4a4a; */
+
 }
 
 header nav ul {
@@ -118,61 +123,81 @@ header nav a {
   vertical-align: bottom;
   line-height: 1.6;
   font-size: 1rem;
-  /* color: #4a4a4a; */
+
+}
+
+header .mobile {
+  display: none;
 }
 
 /* Mobile Header Section */
+@media only screen and (max-width: 480px) {
+  header .desktop {
+    display: none;
+  }
+
+  header .content {
+    padding: 1rem 0;
+    height: 2rem;
+  }
+
+  header .mobile {
+    display: block;
+    width: 100%;
+  }
+
+  header .mobile ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
+
+  header .mobile li {
+    padding: 0;
+  }
+
+}
 
 
 /* Main Content */
 
+/*
 .section {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
-  /* width: 100%; */
-  /* height: 450px; */
-  /* padding: 2rem 1.5rem; */
 }
-
+*/
 /* Section 1: banner etc. */
 .intro {
-  /* display: flex; */
-  /* justify-content: flex-start; */
-  /* align-items: flex-start; */
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
   height: 450px;
   padding: 2rem 1.5rem;
-  /* background-color: #a9a9a9; 2 */
 }
 
 .banner-img {
   width: 60%;
   height: inherit;
-  /* height: auto; */
-}
+  }
 
 .banner-text {
   display: flex;
   flex-direction: column;
-  /* padding: 8rem 10rem 8rem 1.5rem; */
-  padding: 0 10rem 0 1.5rem;
+  padding: 0 5rem 0 1.5rem;
   height: inherit;
   justify-content: center;
   align-items: center;
 }
 
 .banner-text h1 {
-  /* font-weight: 600; */
-  /* font-size: 225%; */
-  /* line-height: 1.0; */
-  padding-bottom: 1.5rem;
+    padding-bottom: 2rem;
 }
 
 .banner-text h3 {
-  /* font-weight: 600; */
-  /* font-size: 100%; */
-  /* line-height: 1.4; */
-  padding-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
 }
 
 .banner-text .button {
@@ -185,19 +210,36 @@ header nav a {
   color: white;
 }
 
+/* Mobile: Section 1: banner etc. */
+@media only screen and (max-width: 480px) {
+
+  .intro {
+      flex-direction:column;
+      height: auto;
+      padding: 0;
+  }
+
+  .banner-img {
+    width: 100%;
+    height: 175px;
+  }
+  .banner-text {
+    display: block;
+    padding: 2rem 1rem;
+  }
+
+}
 /* Section 2: Orientation, etc */
 /* information-main */
 .information {
-  /* background-color: #e6e6e6; 2 */
-  /* height: 525px; 4.19 */
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
   padding: 2rem 1.5rem;
 }
 
 .campus-image {
   width: 60%;
-  /* height: inherit; 4.19 */
-  /* padding: 2rem 1.5rem;  1 */
-  /* border-right: solid 1px #c6c1c1;  1 */
 }
 
 /*width is 98% of the 60% container .course-image to match the image in banner section. Had to do this to accomodate the need for padding and right border */
@@ -207,16 +249,10 @@ header nav a {
 }
 
 .campus-image h2 {
-  /* font-weight: 800; */
-  /* font-size: 150%; */
-  /* line-height: 1.0; */
   padding-top: 2rem;
 }
 
 .campus-image h4 {
-
-  /* font-size: 75%; */
-  /* line-height: 1.5; */
   padding-top: 1.5rem;
 }
 
@@ -224,8 +260,6 @@ header nav a {
 
 .campus-info {
   width: 40%;
-  /* height: inherit; 4.19 */
-  /* padding: 2rem 0;  1 */
 }
 .flex {
   display: flex;
@@ -259,6 +293,40 @@ header nav a {
   padding-top: 1rem;
 }
 
+/* Mobile Section3 Information */
+@media only screen and (max-width: 480px) {
+  .information {
+    /* display: flex; */
+    /* justify-content: flex-start; */
+    /* align-items: flex-start; */
+    padding: 0;
+  }
+  .information .desktop {
+    display: none;
+  }
+  .information .campus-info {
+    width: 100%;
+  }
+  .information .info {
+    flex-direction: column;
+    /* padding: 1rem 1rem; */
+    height: auto; /*150px; */
+    /* border: solid 1px #c6c1c1; */
+  }
+  .info .info-img {
+    width: 100%;
+    height: 200px;
+    /* height: 250px; */
+    padding-bottom: 1rem;
+    /* align-self: center; */
+  }
+  .info-text {
+    padding-left: 1rem;
+    height: auto;
+    justify-content: flex-start;
+  }
+
+}
 /* Section 3 : Courses */
 
 .learning {
