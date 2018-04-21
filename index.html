@@ -12,12 +12,12 @@
       <div id="menu">
       <div class="content">
         <!-- For desktop -->
-        <div class="desktop logo">
+        <div class="desktoponly logo">
            <img src="./resources/images/ic-logo.svg">
            <span class="bold txtdark">COLMAR</span>
            <span class="txtlight">ACADEMY</span>
         </div>
-        <nav class=" desktop txtdark">
+        <nav class=" desktoponly txtdark">
           <ul>
             <li><a href="#menu">On Campus</a></li>
             <li><a href="#menu">Online</a></li>
@@ -57,7 +57,7 @@
 
        <!-- Section 2: Information, etc. -->
        <div class="information light-background">
-         <div class="campus-image desktop">
+         <div class="campus-image desktoponly">
            <img class="campus-img" src="./resources/images/information-main.jpg">
            <h2>It doesn't hurt to keep practicing</h2>
            <h4>"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequate neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."</h4>
@@ -100,7 +100,7 @@
        <!-- Section 3: Courses and Start learning, etc. -->
        <div class="learning dark-background">
          <h1>Start Learning</h1>
-         <div class="flex desktop courses">
+         <div class="flex desktoponly courses">
            <!-- Software Engg -->
            <div class="course-info">
              <img class="course-img" src="./resources/images/course-software.jpg" alt="Course Software">
@@ -144,7 +144,7 @@
             <h4>Analytics, Content Marketing, Mobile Marketing</h4>
           </div>
        </div>
-     
+
        <!-- Mobile Display -->
        <div class="mobile">
          <a href="#" class="course-mob dark-background">Software Engineering</a>
@@ -163,16 +163,17 @@
            <!-- video thesis -->
            <div class="urbanvideo">
                                      <!-- can be deleted <video class="thesis-video" controls>  -->
-              <video class="thesis-video" width="100%" height="350px" controls>
+              <!-- <video class="thesis-video" width="100%" height="350px" controls> -->
+              <video class="thesis-video" width="100%" controls>
                  <source src="./resources/videos/thesis.mp4" alt="The thesis video">
                  Your browser does not support HTML5 video.
               </video>
-              <h3>Reimagine Urban</h3>
-              <h4>"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequate neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."</h4>
+              <h3 class="desktoponly">Reimagine Urban</h3>
+              <h4 class="desktoponly">"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequate neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."</h4>
            </div>
            <!-- other Prototypes -->
            <!-- type 1 -->
-           <div class="thesis-types">
+           <div class="thesis-types desktoponly">
              <div class="flex thesis-detail dark-background">
                <img class="thesis-img" src="./resources/images/thesis-fisma.jpg" alt="Fisma design">
                <div class="flex thesis-text">
@@ -200,7 +201,7 @@
    <footer class="light-background">
      <div class="content">
        <p class="txtdark">© 2016  Colmar Academy, All rights reserved</p>
-        <nav>
+        <nav class="desktoponly">
          <ul>
            <span><a href="#menu" class="txtdark">Terms</a></span>
            <span><a href="#menu" class="txtdark">Privacy</a></span>

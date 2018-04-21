@@ -66,7 +66,7 @@ h4 {
 
 /* Mobile Universal Styles */
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 600px) {
   h1 {
     font-weight: 600;
     font-size: 200%;
@@ -131,8 +131,8 @@ header .mobile {
 }
 
 /* Mobile Header Section */
-@media only screen and (max-width: 480px) {
-  header .desktop {
+@media only screen and (max-width: 600px) {
+  header .desktoponly {
     display: none;
   }
 
@@ -211,7 +211,7 @@ header .mobile {
 }
 
 /* Mobile: Section 1: banner etc. */
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 600px) {
 
   .intro {
       flex-direction:column;
@@ -221,7 +221,7 @@ header .mobile {
 
   .banner-img {
     width: 100%;
-    height: 175px;
+    height: 250px;
   }
   .banner-text {
     display: block;
@@ -294,11 +294,11 @@ header .mobile {
 }
 
 /* Mobile Section3 Information */
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 600px) {
   .information {
     padding: 0;
   }
-  .information .desktop {
+  .information .desktoponly {
     display: none;
   }
   .information .campus-info {
@@ -370,14 +370,15 @@ padding: 2rem 2rem;
 */
 
 /* Mobile Section 3 : Courses */
-@media only screen and (max-width: 480px) {
-  .desktop {
+@media only screen and (max-width: 600px) {
+  .desktoponly {
      display: none;
    }
 
   .learning {
     padding: 2rem 1rem;
     background-color: #e6e6e6;
+    border-bottom: solid 1px #c6c1c1;
   }
 
   .learning h1 {
@@ -426,6 +427,7 @@ padding: 2rem 2rem;
 
 .thesis-types {
   display: block;
+  width: 40%;  /* 4.21 */
 }
 
 .thesis-detail {
@@ -442,6 +444,23 @@ padding: 2rem 2rem;
    flex-direction: column;
    justify-content: center;
    padding-right: 2rem;
+}
+
+/* Mobile Section 4 : Thesis */
+@media only screen and (max-width: 600px) {
+  .thesis .exhibits .desktoponly {
+     display: none;
+   }
+  .thesis .exhibits {
+    padding: 1rem 0 1.5rem 0;
+  }
+  .thesis .exhibits .urbanvideo {
+    width: auto;
+    margin-right: 0;
+  }
+  .thesis .exhibits .thesis-video {
+    margin-bottom: 0;
+  }
 }
 
 /* Footer  */
@@ -462,3 +481,15 @@ footer nav a {
   padding-left: 1rem;
   font-size: .7rem;
 }
+
+/* Mobile Footer */
+@media only screen and (max-width: 600px) {
+  footer .content .desktoponly {
+     display: none;
+   }
+
+   footer {
+     padding: 1rem 1rem;
+   }
+
+ }
